@@ -11,6 +11,12 @@
 # Comments in this file are targeted only to the developer, do not
 # expect to learn how to build the kernel reading this file.
 
+
+cmake_minimum_required(VERSION 3.13.1)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(mein_zephyr_projekt)
+target_sources(app PRIVATE src/main.c src/foo.c)
+
 if(NOT DEFINED ZEPHYR_BINARY_DIR)
   message(FATAL_ERROR "A user error has occurred.
 cmake was invoked with '${CMAKE_CURRENT_LIST_DIR}' specified as the source directory,
