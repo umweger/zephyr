@@ -2,7 +2,7 @@
     "name": "Zephyr: Build",
     "generator": "CMake",
     "configurationType": "Debug",
-    "buildDirectory": "${zephyrproject}/build",
+    "buildDirectory": "${workspaceFolder}/build",
     "cmakeCommandArgs": "-DBOARD=native_posix",
-    "compileCommands": "${zephyrproject}/build/compile_commands.json"
+    "compileCommands": "${workspaceFolder}/build/compile_commands.json"
 }
