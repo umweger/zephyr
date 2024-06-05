@@ -1,0 +1,8 @@
+{
+    "name": "Zephyr: Build",
+    "generator": "CMake",
+    "configurationType": "Debug",
+    "buildDirectory": "${zephyrproject}/build",
+    "cmakeCommandArgs": "-DBOARD=native_posix",
+    "compileCommands": "${zephyrproject}/build/compile_commands.json"
+}
