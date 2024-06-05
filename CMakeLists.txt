@@ -15,7 +15,7 @@
 cmake_minimum_required(VERSION 3.13.1)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(mein_zephyr_projekt)
-target_sources(app PRIVATE src/main.c src/foo.c)
+target_sources(app PRIVATE src/main.c)
 
 # Konfiguration für das native_posix Board
 set(BOARD native_posix)
